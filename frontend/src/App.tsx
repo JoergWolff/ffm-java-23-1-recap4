@@ -1,4 +1,19 @@
-function App() {
+import {useEffect, useState} from "react";
+import axios from "axios";
+
+export default function App() {
+    const[todos, setToDos]= useState([])
+
+    useEffect(() => {
+        getResponseAll()
+    }, []);
+
+    function getResponseAll(){
+        axios.get("/api/todo")
+            .then(response =>{
+                setToDos(response.data)
+            })
+    }
 
   return (
     <>
@@ -6,5 +21,3 @@ function App() {
     </>
   )
 }
-
-export default App
