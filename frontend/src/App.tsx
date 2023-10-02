@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
+import ToDosGallery from "./todos/ToDosGallery.tsx";
 
 export default function App() {
     const[todos, setToDos]= useState([])
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <>
         <h1>App</h1>
+        <ToDosGallery/>
     </>
   )
 }
