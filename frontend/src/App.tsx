@@ -1,9 +1,10 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import ToDosGallery from "./todos/ToDosGallery.tsx";
+import {ToDoModel} from "./todos/model/ToDoModel.tsx";
 
 export default function App() {
-    const[todos, setToDos]= useState([])
+    const[todos, setToDos]= useState<ToDoModel[]>([])
 
     useEffect(() => {
         getResponseAll()
@@ -19,7 +20,7 @@ export default function App() {
   return (
     <>
         <h1>App</h1>
-        <ToDosGallery/>
+        <ToDosGallery todos={todos}/>
     </>
   )
 }

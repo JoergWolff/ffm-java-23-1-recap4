@@ -1,7 +1,14 @@
-export default function ToDosGallery(){
+import {ToDoModel} from "./model/ToDoModel.tsx";
+import ToDoCard from "./todo/ToDoCard.tsx";
+
+type ToDoGalleryPropsm = {
+    todos: ToDoModel[]
+}
+
+export default function ToDosGallery(props: ToDoGalleryPropsm){
     return(
         <>
-            <h2>ToDosGallery</h2>
+            {props.todos.map(todo=><ToDoCard key={todo.id} todo={todo}/>)}
         </>
     )
 }

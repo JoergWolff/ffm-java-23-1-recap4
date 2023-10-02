@@ -8,3 +8,6 @@ body{
   background-color: darkslategrey;
   color: lime;
 }
+section{
+  border: 0.1em solid lime;
+}
