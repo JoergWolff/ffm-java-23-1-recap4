@@ -8,6 +8,15 @@ body{
   background-color: darkslategrey;
   color: lime;
 }
+header{
+  display: flex;
+  justify-content: center;
+  background-color: wheat;
+  color: darkslategrey;
+  padding-top: 0.5em;
+}
 section{
   border: 0.1em solid lime;
+  padding: 1em;
+  margin-bottom: 1em;
 }
