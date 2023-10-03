@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-import ToDosGallery from "./todos/ToDosGallery.tsx";
 import {ToDoModel} from "./todos/model/ToDoModel.tsx";
+import {Route, Routes} from "react-router-dom";
+import MainPage from "./mainpage/MainPage.tsx";
 
 export default function App() {
     const[todos, setToDos]= useState<ToDoModel[]>([])
@@ -19,8 +20,9 @@ export default function App() {
 
   return (
     <>
-        <h1>App</h1>
-        <ToDosGallery todos={todos}/>
+        <Routes>
+            <Route path="/" element={<MainPage todos={todos}/>}/>
+        </Routes>
     </>
   )
 }
