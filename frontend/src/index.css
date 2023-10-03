@@ -22,6 +22,20 @@ section{
   padding: 1em;
   margin-bottom: 1em;
 }
+.nav_todomenu{
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 2.9em;
+  background-color: wheat;
+  color: darkslategrey;
+}
+.nav_todomenu button{
+  background-color: darkslategrey;
+  color: lime;
+  width: 6em;
+  margin: 1em;
+}
 footer{
   display: flex;
   justify-content: center;

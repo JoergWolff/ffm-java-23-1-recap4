@@ -1,5 +1,5 @@
 import {ToDoModel} from "../todos/model/ToDoModel.tsx";
-import ToDosGallery from "../todos/ToDosGallery.tsx";
+import ToDosGallery from "../todos/todo/ToDosGallery.tsx";
 import Header from "../header/Header.tsx";
 import Footer from "../footer/Footer.tsx";
 

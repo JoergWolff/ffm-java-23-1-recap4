@@ -5,7 +5,7 @@ type ToDoCardProps = {
 }
 export default function ToDoCard(props: ToDoCardProps){
     return(
-        <section>
+        <section className="section_card">
             <p>{props.todo.id}</p>
             <h3>{props.todo.description}</h3>
             <p>{props.todo.status}</p>
