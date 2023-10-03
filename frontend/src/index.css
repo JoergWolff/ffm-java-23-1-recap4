@@ -11,6 +11,8 @@ body{
 header{
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
   background-color: wheat;
   color: darkslategrey;
   padding-top: 0.5em;
@@ -19,4 +21,13 @@ section{
   border: 0.1em solid lime;
   padding: 1em;
   margin-bottom: 1em;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  background-color: wheat;
+  color: darkslategrey;
+  padding-top: 0.5em;
 }

@@ -18,7 +18,11 @@ class TodoRepository {
             "3", new Todo("3", "Staubsaugen am Mittwoch", TodoStatus.DONE),
             "4", new Todo("4", "Geschirr abwaschen", TodoStatus.OPEN),
             "5", new Todo("5", "Fussleisten befestigen", TodoStatus.IN_PROGRESS),
-            "6", new Todo("6", "Staubsaugen am Mittwoch", TodoStatus.OPEN)
+            "6", new Todo("6", "Staubsaugen am Donnerstag", TodoStatus.OPEN),
+            "7", new Todo("7", "Dachboden aufräumen", TodoStatus.DONE),
+            "8", new Todo("8", "Keller aufräumen", TodoStatus.OPEN),
+            "9", new Todo("9", "Schrank schleifen und streichen", TodoStatus.IN_PROGRESS),
+            "10", new Todo("10", "Geschirr abwaschen", TodoStatus.DONE)
     ));
 
 
