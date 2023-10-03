@@ -6,6 +6,7 @@ import MainPage from "./mainpage/MainPage.tsx";
 
 export default function App() {
     const[todos, setToDos]= useState<ToDoModel[]>([])
+    const[errorMessage, setErrorMessage] = useState<string>("")
 
     useEffect(() => {
         getResponseAll()
@@ -16,12 +17,15 @@ export default function App() {
             .then(response =>{
                 setToDos(response.data)
             })
+            .catch(()=>{
+                setErrorMessage("Loading...Please refresh!")
+            })
     }
 
   return (
     <>
         <Routes>
-            <Route path="/" element={<MainPage todos={todos}/>}/>
+            <Route path="/" element={<MainPage todos={todos} errorMessage={errorMessage}/>}/>
         </Routes>
     </>
   )
