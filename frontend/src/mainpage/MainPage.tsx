@@ -1,5 +1,6 @@
 import {ToDoModel} from "../todos/model/ToDoModel.tsx";
 import ToDosGallery from "../todos/ToDosGallery.tsx";
+import Header from "../header/Header.tsx";
 
 type MainPageProps = {
     todos: ToDoModel[]
@@ -7,7 +8,7 @@ type MainPageProps = {
 export default function MainPage(props: MainPageProps){
     return (
         <>
-        <h1>ToDos</h1>
+        <Header/>
             <ToDosGallery todos={props.todos}/>
         </>
     )
