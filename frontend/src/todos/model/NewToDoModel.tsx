@@ -1,5 +1,4 @@
-export type ToDoModel = {
-    id: string,
+export type NewToDoModel = {
     description: string,
     status: string,
 }
